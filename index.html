@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>NFT Preview Card Component</title>
+  </head>
+  <body class="font-Outfit bg-main-dark-blue">
+    <div class="flex justify-center items-center min-h-screen">
+      <section
+        class="w-[290px] h-auto bg-card-dark-blue px-[20px] py-[15px] rounded-lg mobile:w-[250px]"
+      >
+        <div class="relative cursor-pointer group">
+          <img
+            src="./images/image-equilibrium.jpg"
+            class="rounded-lg mobile:w-[210px] mobile:h-[210px]"
+            alt="Equilibrium"
+            width="250px"
+            height="250px"
+          />
+          <div
+            class="absolute inset-0 rounded-lg group-hover:bg-cyan group-hover:opacity-[0.5]"
+          ></div>
+          <img
+            src="./images/icon-view.svg"
+            alt="view icon"
+            class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] hidden group-hover:block"
+          />
+        </div>
+        <h1
+          class="text-[18px] text-white my-4 cursor-pointer hover:text-cyan focus-visible:text-cyan"
+        >
+          Equilibrium #3429
+        </h1>
+        <p class="text-[15px] text-soft-blue mobile:text-[13px]">
+          Our Equilibrium collection promotes balance and calm
+        </p>
+        <div class="flex justify-between py-5">
+          <p class="flex items-center">
+            <img src="./images/icon-ethereum.svg" alt="Ethereum Bitcoin" />
+            <span class="text-[14px] text-cyan px-2">0.041ETH</span>
+          </p>
+          <p class="flex items-center">
+            <img src="./images/icon-clock.svg" alt="clock image" />
+            <span class="text-[14px] text-soft-blue px-2">3 days left</span>
+          </p>
+        </div>
+        <div class="border-t-[0.2px] border-soft-blue"></div>
+        <div class="py-[15px] flex items-center mobile:py-[5px]">
+          <span class="border-[1px] rounded-full border-white block">
+            <img
+              src="./images/image-avatar.png"
+              alt="creator image"
+              width="33px"
+              height="33px"
+              class="object-cover"
+            />
+          </span>
+          <span
+            class="text-[14px] text-soft-blue px-4 mobile:text-[13px] mobile:px-3"
+            >Creation of
+            <span
+              class="text-white cursor-pointer hover:text-cyan focus-visible:text-cyan"
+              >Jules Wyvern</span
+            ></span
+          >
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
